@@ -103,12 +103,19 @@ nav {
 .speakers {
   margin-top: 60px;
 }
-.section-title {
-  font-size: 30px;
+.speaker-heading {
+  font-size: 48px;
   font-weight: 700;
   text-align: center;
   color: #000000;
   margin-bottom: 60px;
+}
+
+.blue-dot {
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  border-radius: 50%;
 }
 
 .speakers-grid {
@@ -150,4 +157,120 @@ nav {
 .speaker-title {
   font-size: 13px;
   color: #6b7280;
+}
+
+/* PRICING */
+.pricing {
+  padding: 80px 24px;
+  background: #f9fafb;
+}
+
+.pricing-title {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.pricing-sub {
+  font-size: 16px;
+  color: #575757;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+  align-items: start;
+}
+.plan-card {
+  background: #fff;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s;
+}
+.plan-card:hover {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+}
+.plan-card.featured {
+  background: #0d1b2a;
+  border-color: #222325;
+  box-shadow: 0 12px 40px rgba(37, 99, 235, 0.2);
+  transform: scale(1.03);
+}
+.plan-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #9ca3af;
+  margin-bottom: 12px;
+}
+.plan-card.featured .plan-label {
+  color: #60a5fa;
+}
+.plan-price {
+  font-size: 42px;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.plan-card.featured .plan-price {
+  color: #fff;
+}
+.plan-per {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-bottom: 28px;
+}
+.plan-features {
+  list-style: none;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.plan-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 14px;
+  color: #4b5563;
+}
+.plan-card.featured .plan-features li {
+  color: #abb5c9;
+}
+
+.plan-btn {
+  width: 100%;
+  padding: 13px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #000000;
+  background: #ffffff;
+  color: #000000;
+  transition: color 0.2s;
+}
+.plan-btn:hover {
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+.plan-card.featured .plan-btn {
+  background: #2563eb;
+  color: #ffffff;
+}
+.plan-card.featured .plan-btn:hover {
+  background: #1d4ed8;
 }
