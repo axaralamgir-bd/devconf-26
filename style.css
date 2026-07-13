@@ -343,3 +343,20 @@ nav {
   font-size: 28px;
   font-weight: 500;
 }
+
+/* FOOTER */
+footer {
+  background: #0d0d1a;
+  text-align: center;
+  padding: 36px 24px;
+}
+.footer-brand {
+  color: #b8babe;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.footer-copy {
+  color: #4b5563;
+  font-size: 12px;
+}
